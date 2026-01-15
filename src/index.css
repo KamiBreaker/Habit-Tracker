@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.9);
+  
+  /* Vibrant Black-Purple Gradient Background */
+  background-color: #050508;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(260, 60%, 15%, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(270, 70%, 20%, 1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(290, 60%, 20%, 1) 0, transparent 50%);
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #374151; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; 
+}
