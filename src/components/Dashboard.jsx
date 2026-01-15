@@ -1,17 +1,35 @@
 import React from 'react';
+import { useGamification } from '../context/GamificationContext';
 import StatsCard from '../components/StatsCard';
 import HabitList from '../components/HabitList';
 import Journal from '../components/Journal';
 
 const Dashboard = () => {
+  const { resetData } = useGamification();
+
+  const handleReset = () => {
+    if (window.confirm("Are you sure you want to reset all progress? This cannot be undone.")) {
+      resetData();
+    }
+  };
+
   return (
     <div className="min-h-screen bg-transparent text-white font-sans flex justify-start md:justify-center py-10">
       <div className="w-full max-w-5xl px-6 md:pl-32 md:pr-12 space-y-8">
-        <header className="text-left mb-12 md:pl-2">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-indigo-500 mb-3">
-            HabitQuest
-          </h1>
-          <p className="text-gray-400 text-lg">Level up your life, one habit at a time.</p>
+        <header className="text-left mb-12 md:pl-2 flex justify-between items-start">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-500 to-indigo-500 mb-3">
+              HabitQuest
+            </h1>
+            <p className="text-gray-400 text-lg">Level up your life, one habit at a time.</p>
+          </div>
+          <button 
+            onClick={handleReset}
+            className="text-xs text-red-500/50 hover:text-red-500 transition-colors mt-2"
+            title="Reset all data"
+          >
+            Reset Progress
+          </button>
         </header>
 
         {/* Top Stats Section */}

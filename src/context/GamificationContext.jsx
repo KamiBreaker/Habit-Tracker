@@ -136,6 +136,15 @@ export const GamificationProvider = ({ children }) => {
     return { score, bonusXP, feedback };
   };
 
+  const resetData = () => {
+    try {
+      localStorage.removeItem('habit-quest-data');
+      setState(INITIAL_STATE);
+    } catch (e) {
+      console.error("Failed to reset data", e);
+    }
+  };
+
   return (
     <GamificationContext.Provider value={{ 
       ...state, 
@@ -144,7 +153,8 @@ export const GamificationProvider = ({ children }) => {
       completeHabit,
       deleteHabit,
       editHabit, 
-      analyzeJournal 
+      analyzeJournal,
+      resetData
     }}>
       {children}
     </GamificationContext.Provider>
