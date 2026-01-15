@@ -4,7 +4,7 @@ A personal dashboard for tracking habits and daily reflections.
 
 This project is an experiment in combining productivity tools with some light gamification elements. It basically lets you create habits, check them off to gain "XP", and write journal entries that get a simple sentiment score.
 
-The main idea was to make something that looks nice and feels satisfying to use, hence the animations and the "level up" system. It's not a full-blown production app, just a playground for some frontend ideas.
+The main idea was to make something that looks nice and feels satisfying to use, hence the animations and the "level up" system. It's not a full-blown production app, just a playground for some frontend ideas and going beyond CRUD.
 
 ## Getting Started
 
