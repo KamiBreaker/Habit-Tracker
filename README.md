@@ -29,7 +29,6 @@ If you want to run this locally to check it out:
 ## Screenshots
 
 <div align="center">
-  <img src="screenshots/Xnip2026-01-15_18-16-31.jpg" width="45%" />
   <img src="screenshots/Xnip2026-01-15_18-42-03.jpg" width="45%" />
   <img src="screenshots/Xnip2026-01-15_18-42-28.jpg" width="45%" />
   <img src="screenshots/Xnip2026-01-15_18-50-19.jpg" width="45%" />
