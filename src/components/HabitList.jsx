@@ -173,7 +173,7 @@ const HabitList = () => {
               whileHover={{ scale: 1.01, backgroundColor: "rgba(255,255,255,0.03)" }}
               className="flex items-center justify-between bg-white/5 backdrop-blur-sm p-4 rounded-2xl group transition-all border border-transparent hover:border-white/5"
             >
-              <div className="flex-1">
+              <div className="flex-1 pl-[4.25rem]">
                 {editingId === habit.id ? (
                   <div className="flex items-center gap-2 mr-2">
                     <input
