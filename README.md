@@ -25,7 +25,7 @@ If you want to run this locally to check it out:
     ```bash
     npm run dev
     ```
-
+if online then visit https://smarthabitracker.vercel.app/ to check it out.
 ## Screenshots
 
 <div align="center">
